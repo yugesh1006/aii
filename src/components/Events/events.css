@@ -1,0 +1,48 @@
+.navbar {
+	display: flex;
+	justify-content: space-around;
+}
+.navbar h1:hover {
+	cursor: pointer;
+  transform: scale(1.1);
+}
+.event {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.toggle {
+	position: relative;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+}
+.toggle_button {
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 30px;
+	width: 80px;
+	border-radius: 20px;
+	background-image: linear-gradient(aqua, skyblue);
+	position: relative;
+	cursor: pointer;
+	transform: scale(0.5);
+}
+
+.notch {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	background: yellow;
+	position: absolute;
+	top: -2.5px;
+	box-shadow: 0 0 5px yellow;
+	z-index: 10;
+	transition: all 0.4s ease-in-out;
+}
+.list > .notch {
+	background: rgb(151, 149, 149);
+	box-shadow: 0 0 5px rgb(58, 58, 58);
+	transform: translate(50px, 0);
+}

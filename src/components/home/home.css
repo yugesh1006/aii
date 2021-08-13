@@ -1,0 +1,37 @@
+.heading {
+	text-align: center;
+}
+.event_card {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.images {
+    height: 300px;
+}
+@media (max-width: 1050px) {
+	.event_card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+    .event_card span{
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid black;
+    }
+	.images {
+		height: 300px;
+	}
+}
+@media (max-width: 600px) {
+    .images {
+		height: 200px;
+	}
+}
+.event_card span:hover {
+	cursor: pointer;
+	transform: scale(0.98);
+}
+.event_name {
+	text-align: center;
+}

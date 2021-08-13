@@ -1,0 +1,175 @@
+.card {
+	display: flex;
+	flex-direction: row;
+	width: 48%;
+	padding: 5px;
+	border: 2px solid hsl(0, 0%, 41%);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 2px 15px 1px rgba(56, 56, 56, 0.99);
+	position: relative;
+	color: rgb(230, 233, 235);
+	-webkit-transition: width 1s linear;
+	-moz-transition: width 1s linear;
+	-o-transition: width 1s linear;
+	transition: width 1s linear;
+}
+
+.card:hover {
+	background-color: #c0cde2;
+	color: rgb(161, 159, 159);
+	box-shadow: 5px -3px 5px 0px rgba(174, 184, 228, 0.99);
+	transform: scale(0.98);
+	cursor: pointer;
+}
+
+.description {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 5px 10px 5px
+}
+.poster {
+	border: 2px solid rgba(103, 121, 199, 0.99);
+	border-radius: 10px;
+	width: 50%;
+}
+
+.title {
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 26px;
+}
+.subTitle {
+	margin-bottom: 20px;
+}
+
+.venue {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.venue b {
+	font-size: 22px;
+}
+
+.address b {
+	font-size: 22px;
+}
+
+/*List_View*/
+
+.list_card {
+	margin: auto;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	border-top: 2px solid hsl(0, 0%, 41%);
+	padding: 30px 20px;
+	position: relative;
+	color: rgb(230, 233, 235);
+	-webkit-transition: padding 1s linear, width 1s linear;
+	-moz-transition: padding 1s linear, width 1s linear;
+	-o-transition: padding 1s linear, width 1s linear;
+	transition: padding 1s linear, width 1s linear;
+}
+.list_card:hover {
+	background-color: #c0cde2;
+	color: rgb(161, 159, 159);
+	box-shadow: 5px -3px 5px 0px rgba(174, 184, 228, 0.99);
+	width: 59.95%;
+	cursor: pointer;
+}
+
+.list_card > .poster {
+	width: 200px;
+}
+.list_card > .description {
+	color: black;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 5px 10px 5px;
+}
+@media (max-width: 800px) {
+	.card {
+		width: 48%;
+    height: 330px;
+	}
+  .subTitle {
+	margin-bottom: 5px;
+  font-size: 14px;
+}
+  .poster{
+    height: 190px;
+  }
+  .title{
+    font-size: 18px;
+  }
+
+  .address{
+    position: absolute;
+    width: 90%;
+    top: 220px;
+    left: 5%;
+  }
+ .venue{ 
+	font-size: 14px;
+}
+.venue b {
+	font-size: 15px;
+}
+
+.address b {
+	font-size: 15px;
+}
+.list_card >.description > .address{
+  position: unset;
+  width: 100% ;
+}
+}
+
+
+@media (max-width: 400px) {
+	.card {
+		width: 180px;
+    height: 420px;
+    flex-direction: column;
+	}
+.title{
+  font-size: 14px;
+}
+  .subTitle {
+	margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.poster{
+    width: 165px;
+}
+.address{
+  position: unset;
+  font-size: 12px;
+}
+
+ .venue{ 
+	font-size: 13px;
+  margin-bottom: 5px;
+}
+.venue b {
+	font-size: 13px;
+}
+
+.address b {
+	font-size: 13px;
+}
+.list_card{
+  flex-direction: column;
+}
+.list_card >.description > .address{
+  position: unset;
+  width: 100% ;
+}
+.description a{
+  font-size:12px ;
+}
+}
