@@ -29,7 +29,7 @@ const Home = ({setContent,content}) => {
     const onClick=(c)=>{
         localStorage.setItem('active',Capitalize(c.category))
         localStorage.setItem('url',c.data)
-        history.push('/events')
+        history.push('/aii/events')
     };
 
 

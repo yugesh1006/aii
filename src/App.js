@@ -11,10 +11,10 @@ const [content, setContent] = useState([]);
     <div className="app">
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/aii">
           <Home setContent={setContent} content={content}/>
         </Route>
-        <Route path="/events">
+        <Route path="/aii/events">
           <Events/>
         </Route>
       </Switch>
